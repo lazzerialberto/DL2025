@@ -9,6 +9,8 @@ __pycache__/
 #Zip archive files
 *.zip
 
+*.jpeg
+
 # Distribution / packaging
 .Python
 build/
