@@ -110,7 +110,7 @@ print("--- Model Definition ---")
 def build_and_train(hparams):
     tf.keras.backend.clear_session()
     
-    base_model = DenseNet121(
+    base_model = Xception(
         weights='imagenet',
         include_top=False,
         input_shape=(320, 320, 3)
@@ -164,7 +164,7 @@ best = fmin(
 )
 
 print("Best hyperparameters:", best)
-with open('best_hyperparameters.txt', 'w') as f:
+with open('best_hyperparameters_xception.txt', 'w') as f:
     for key, value in best.items():
         f.write(f"{key}: {value}\n")
 print("Hyperparameter optimization completed.")
