@@ -165,6 +165,5 @@ best = fmin(
 
 print("Best hyperparameters:", best)
 with open('best_hyperparameters_xception.txt', 'w') as f:
-    for key, value in best.items():
-        f.write(f"{key}: {value}\n")
+    f.write(f"{best}\n")
 print("Hyperparameter optimization completed.")
