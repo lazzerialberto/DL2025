@@ -12,6 +12,7 @@ from hyperopt import fmin, tpe, hp, Trials, STATUS_OK
 from hyperopt.pyll.base import scope
 
 print("--- GPU Availability Check (TensorFlow 2.x) ---")
+TF_ENABLE_ONEDNN_OPTS=0
 gpus = tf.config.list_physical_devices('GPU')
 if gpus:
     print(f"TensorFlow can access {len(gpus)} GPU(s): {[gpu.name for gpu in gpus]}")
@@ -159,7 +160,7 @@ best = fmin(
     fn=build_and_train,
     space=space,
     algo=tpe.suggest,
-    max_evals=16,
+    max_evals=20,
     trials=trials
 )
 

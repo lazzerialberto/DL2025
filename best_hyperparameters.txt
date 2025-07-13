@@ -1,3 +1,1 @@
-dense_units: 128
-dropout: 0.3617239221268094
-lr: 0.001
+{'dense_units': 128, 'dropout': 0.3617239221268094, 'lr': 0.001}
