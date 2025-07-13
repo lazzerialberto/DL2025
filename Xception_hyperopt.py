@@ -159,7 +159,7 @@ best = fmin(
     fn=build_and_train,
     space=space,
     algo=tpe.suggest,
-    max_evals=20,
+    max_evals=16,
     trials=trials
 )
 
