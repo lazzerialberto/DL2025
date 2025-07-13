@@ -164,6 +164,6 @@ best = fmin(
 )
 
 print("Best hyperparameters:", best)
-with open('best_hyperparameters.txt', 'w') as f:
+with open('best_hyperparameters_DenseNet121.txt', 'w') as f:
     f.write(f"{best}\n")
 print("Hyperparameter optimization completed.")
