@@ -5,7 +5,7 @@
 
 This repository contains the main project for DeepLearning course (A.A. 2024/2025).
 
-An AI-based model is trained and evaluted in order to recognize Pneumonia on children. Code and presentation in the [notebook](./project.ipynb)
+An AI-based model is trained and evaluted in order to recognize Pneumonia on children. Code and presentation in [notebook](./project.ipynb) and [DL2025.pdf](./DL2025.pdf).
 
 </div>
 
